@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-21T19:02:31.372Z",
+    "end": "2026-04-21T19:02:34.360Z",
+    "duration": 2988,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6579b7e-df30-4db1-8540-4f93d80ac451",
+      "title": "",
+      "fullFile": "cypress\\e2e\\homePageSanity.cy.js",
+      "file": "cypress\\e2e\\homePageSanity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4a8efcb-2298-44ab-999c-451d3e087597",
+          "title": "Home Page Sanity",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return HTTP 200 and display the correct page title",
+              "fullTitle": "Home Page Sanity should return HTTP 200 and display the correct page title",
+              "timedOut": null,
+              "duration": 1642,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('/').its('status').should('eq', 200);\ncy.title().should('eq', this.homedata.title);",
+              "err": {},
+              "uuid": "5353e70a-a76c-4c9a-bef2-5bbe412c47e3",
+              "parentUUID": "f4a8efcb-2298-44ab-999c-451d3e087597",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display the Contact form with all required fields visible",
+              "fullTitle": "Home Page Sanity should display the Contact form with all required fields visible",
+              "timedOut": null,
+              "duration": 617,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.validateContactForm();",
+              "err": {},
+              "uuid": "49b1eaae-37e7-46c3-a4bc-bf90ad4cf76b",
+              "parentUUID": "f4a8efcb-2298-44ab-999c-451d3e087597",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display Book Now buttons for all listed room types",
+              "fullTitle": "Home Page Sanity should display Book Now buttons for all listed room types",
+              "timedOut": null,
+              "duration": 554,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.default.validateBookNow(this.homedata.booknow);",
+              "err": {},
+              "uuid": "56d85e86-6845-4096-b586-48a77f69a596",
+              "parentUUID": "f4a8efcb-2298-44ab-999c-451d3e087597",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5353e70a-a76c-4c9a-bef2-5bbe412c47e3",
+            "49b1eaae-37e7-46c3-a4bc-bf90ad4cf76b",
+            "56d85e86-6845-4096-b586-48a77f69a596"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "Shady Meadows B&B — Test Report"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

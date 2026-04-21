@@ -1,0 +1,23 @@
+{
+  "name": "cypress-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "cy:open":       "cypress open",
+  "cy:run":        "cypress run",
+  "cy:run:chrome": "cypress run --browser chrome",
+  "cy:smoke":      "cypress run --spec 'cypress/e2e/homePageSanity.cy.js'",
+  "cy:dashboard":  "cypress run --spec 'cypress/e2e/dashboard.cy.js'",
+  "cy:report":     "cypress run && npm run report:merge",
+  "report:merge":  "mochawesome-merge cypress/reports/mochawesome*.json > cypress/reports/full-report.json && marge cypress/reports/full-report.json --reportDir cypress/reports --inline --charts"
+},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.5.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}

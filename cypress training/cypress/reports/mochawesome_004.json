@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-21T18:58:11.690Z",
+    "end": "2026-04-21T18:58:19.463Z",
+    "duration": 7773,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c1e2845-bd9e-4032-be7c-d7f2afe42566",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dashboard.cy.js",
+      "file": "cypress\\e2e\\dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35181cda-4176-41ad-9576-70c8c8ae7656",
+          "title": "Dashboard Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should redirect to the admin dashboard after valid login",
+              "fullTitle": "Dashboard Page should redirect to the admin dashboard after valid login",
+              "timedOut": null,
+              "duration": 1997,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPage.default.loginWithDefaultCredentials();\n_dashboardPage.default.verifyDashboardLoaded();",
+              "err": {},
+              "uuid": "6ad15e2b-cb0c-4cb5-a658-48d09efbda5f",
+              "parentUUID": "35181cda-4176-41ad-9576-70c8c8ae7656",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify navigation bar after login",
+              "fullTitle": "Dashboard Page Verify navigation bar after login",
+              "timedOut": null,
+              "duration": 1135,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPage.default.loginWithDefaultCredentials();\n_dashboardPage.default.verifyHeader();",
+              "err": {},
+              "uuid": "575fddd2-e128-443c-b23f-85b0536ef829",
+              "parentUUID": "35181cda-4176-41ad-9576-70c8c8ae7656",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should navigate to the Messages view via the nav link",
+              "fullTitle": "Dashboard Page should navigate to the Messages view via the nav link",
+              "timedOut": null,
+              "duration": 1638,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPage.default.loginWithDefaultCredentials();\n_dashboardPage.default.selectMessages();",
+              "err": {},
+              "uuid": "4328dd6a-9a42-45ab-acb2-0bc7c3040078",
+              "parentUUID": "35181cda-4176-41ad-9576-70c8c8ae7656",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should log out and return to the login page",
+              "fullTitle": "Dashboard Page should log out and return to the login page",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPage.default.loginWithDefaultCredentials();\n_dashboardPage.default.verifyLogout();",
+              "err": {},
+              "uuid": "e1857a69-071a-4b89-afd0-00a4d6327046",
+              "parentUUID": "35181cda-4176-41ad-9576-70c8c8ae7656",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Rooms tab navigation",
+              "fullTitle": "Dashboard Page Verify Rooms tab navigation",
+              "timedOut": null,
+              "duration": 1540,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPage.default.loginWithDefaultCredentials();\n_roomsPage.default.selectRoom();",
+              "err": {},
+              "uuid": "1fedf630-6a7f-4883-a9d7-b15a88514ee6",
+              "parentUUID": "35181cda-4176-41ad-9576-70c8c8ae7656",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ad15e2b-cb0c-4cb5-a658-48d09efbda5f",
+            "575fddd2-e128-443c-b23f-85b0536ef829",
+            "4328dd6a-9a42-45ab-acb2-0bc7c3040078",
+            "e1857a69-071a-4b89-afd0-00a4d6327046",
+            "1fedf630-6a7f-4883-a9d7-b15a88514ee6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7473,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "Shady Meadows B&B — Test Report"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
