@@ -72,6 +72,17 @@ cypress training/
 | 4 | should log out and return to the login page | ✅ PASS |
 | 5 | Verify Rooms tab navigation | ✅ PASS |
 
+
+Time Limitation
+
+Dashboard page
+Missing Negative tescases
+should show an error with invalid credentials
+should not log in with empty username and password
+
+Missing Bonus scenario
+BONUS: Admin Rooms vs Public Homepage cross-verification
+
 ---
 
 ## ⚙️ Setup & Installation
